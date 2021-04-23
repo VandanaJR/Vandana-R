@@ -1,0 +1,265 @@
+.page-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.mob-logo {
+  display: none;
+}
+
+.sidebar {
+  width: 20%;
+  height: 100%;
+  background-color: #ffc727;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  .sidebar-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    width: 100%;
+    img {
+      margin: 80px 0;
+      width: 90%;
+      padding-left: 10px;
+    }
+    a {
+      color: white;
+      padding: 20px 0;
+      font-weight: bold;
+      padding-left: 20px;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  //background-color: palevioletred;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .girl {
+    width: 60%;
+    height: 90%;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .plant {
+    position: absolute;
+    bottom: -10px;
+    left: -50px;
+  }
+}
+
+.about {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+
+  .about-content {
+    width: 90%;
+    height: 20%;
+    color: #455a64;
+    h2 {
+      margin-bottom: 30px;
+      font-size: 6rem;
+    }
+    p {
+      font-size: 3rem;
+    }
+  }
+}
+.footer {
+  display: none;
+}
+
+.active-page {
+  background-color: rgba(0, 0, 0, 0.096);
+}
+
+.active-mob-page {
+  color: #455a64 !important;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1305px) {
+  .sidebar {
+    width: 30%;
+  }
+
+  .about {
+    .about-content {
+      h2 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .page-container {
+    display: block;
+  }
+  .sidebar {
+    display: none;
+  }
+  .mob-logo {
+    display: block;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    img {
+      width: 70%;
+      height: 70%;
+    }
+  }
+  .content {
+    //background-color: rgb(170, 211, 130);
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    //background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .girl {
+      width: 90%;
+      height: 50%;
+      margin-right: auto;
+    }
+    .about {
+      width: 100%;
+      height: 100%;
+      height: max-content;
+      //background-color: cornsilk;
+      .about-content {
+        //background-color: rgb(122, 121, 184);
+        height: 100%;
+        width: max-content;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+    .plant {
+      bottom: -5px;
+      left: 0;
+      .plant-container {
+        img {
+          width: 80%;
+          height: 80%;
+        }
+      }
+    }
+  }
+  .footer {
+    display: block;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc727;
+
+    .footer-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      a {
+        padding: 10px 20px;
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    .plant {
+      bottom: -5px;
+      .plant-container {
+        img {
+          width: 60%;
+          height: 60%;
+        }
+      }
+    }
+  }
+  .about {
+    .about-content {
+      h2 {
+        margin-bottom: 15px;
+        font-size: 3.5rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+  .footer {
+    .footer-container {
+      a {
+        padding: 8px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mob-logo {
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+  .about {
+    .about-content {
+      h2 {
+        margin-bottom: 15px;
+        font-size: 3.2rem;
+      }
+      p {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  .footer {
+    .footer-container {
+      a {
+        padding: 8px;
+        font-size: 15px;
+      }
+    }
+  }
+  .content {
+    .plant {
+      z-index: -1;
+      left: -15px;
+      bottom: -5px;
+      .plant-container {
+        img {
+          width: 50%;
+          height: 50%;
+        }
+      }
+    }
+  }
+}

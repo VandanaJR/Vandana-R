@@ -1,0 +1,263 @@
+.project-container {
+  padding: 30px 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.project {
+  flex: 1 1 50rem;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  .site-image {
+    height: 70%;
+    width: 100%;
+  }
+  .description {
+    padding: 30px 0;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #455a64;
+    color: #ffc727;
+    h1 {
+      margin: 20px 0 5px;
+    }
+    p {
+      font-size: 1.8rem;
+      width: 70%;
+      margin: 0 auto;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      a {
+        color: #455a64;
+      }
+    }
+  }
+}
+
+.apparelQ {
+  .site-image {
+    background-image: url(../images/ApparelQ.PNG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.beatmaker {
+  .site-image {
+    background-image: url(../images/BeatMaker.PNG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.coloors {
+  .site-image {
+    background-image: url(../images/Coloors.PNG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.photography {
+  .site-image {
+    background-image: url(../images/Photography.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #ffc727;
+  border-radius: 0.6em;
+  color: #ffc727;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ffc727;
+  outline: 0;
+}
+
+.fifth {
+  border-color: #ffc727;
+  // border: 0;
+  border-radius: 0;
+  color: #ffc727;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 150ms ease-in-out;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #ffc727;
+    z-index: -1;
+    transition: width 150ms ease-in-out;
+  }
+
+  &:hover {
+    color: #fff;
+    &:after {
+      width: 110%;
+    }
+  }
+}
+@media screen and (max-width: 1350px) {
+  .project {
+    .site-image {
+      height: 60%;
+    }
+    .description {
+      height: 40%;
+      padding: 10px 20px;
+
+      p {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  .btn {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .project {
+    flex: 1 1 45rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .project {
+    flex: 1 1 35rem;
+    height: 100%;
+  }
+  .btn {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .project {
+    .description {
+      p {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project {
+    .description {
+      p {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .project-container {
+    padding: 0 5px;
+  }
+  .project {
+    .description {
+      h1 {
+        font-size: 1.8rem;
+      }
+      p {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .btn {
+    font-size: 6.5px;
+  }
+}
+@media screen and (max-height: 1400px) {
+  .project {
+    height: 50%;
+  }
+}
+
+@media screen and (max-height: 1150px) {
+  .project {
+    height: 70%;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .project {
+    flex: 1 1 30rem;
+    height: 80%;
+  }
+}
+
+@media screen and (max-height: 641px) {
+  .project {
+    height: 100%;
+    .site-image {
+      height: 50%;
+    }
+    .description {
+      height: 50%;
+    }
+  }
+}
+
+@media screen and (max-height: 900px) and (max-width: 1500px) {
+  .project {
+    flex: 1 1 35rem;
+    height: 70%;
+  }
+}
