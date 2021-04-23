@@ -3,16 +3,6 @@ $header2: 4rem;
 $header3: 3rem;
 $header4: 2rem;
 $text: 2.5rem;
-$gradient: linear-gradient(#38d39f, #38a4d3);
-$background-color: #154353;
-$gray-text: #2c2c2c;
-
-@mixin flex($jusify, $align, $direction) {
-  display: flex;
-  justify-content: $jusify;
-  align-items: $align;
-  flex-direction: $direction;
-}
 
 @import "global";
 @import "intro";
