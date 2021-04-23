@@ -284,6 +284,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     background-color: #ffc727;
+    padding-bottom: env(safe-area-inset-bottom);
   }
   .footer .footer-container {
     display: -webkit-box;

@@ -176,12 +176,13 @@
     justify-content: center;
     align-items: center;
     background-color: #ffc727;
-
+    padding-bottom: env(safe-area-inset-bottom);
     .footer-container {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
+
       a {
         padding: 10px 20px;
         color: white;
