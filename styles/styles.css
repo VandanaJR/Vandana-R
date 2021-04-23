@@ -272,8 +272,9 @@ a {
   }
   .footer {
     display: block;
+    position: fixed;
     width: 100%;
-    height: 10vh;
+    height: 13vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -284,7 +285,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     background-color: #ffc727;
-    padding-bottom: env(safe-area-inset-bottom);
+    padding-bottom: calc(env(safe-area-inset-bottom, -34px) + 34px);
   }
   .footer .footer-container {
     display: -webkit-box;
